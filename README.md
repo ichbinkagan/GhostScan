@@ -43,3 +43,13 @@ GHOSTSCAN/
 │
 ├── requirements.txt     # Python dependency configuration file
 └── README.md            # Repository documentation
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
+GhostScan requires **Python 3.10+**. Since it performs raw packet sniffing, you must install the appropriate packet capture drivers for your Operating System:
+
+* **Windows:** Download and install [Npcap](https://npcap.com/). During installation, make sure to check the option *"Install Npcap in WinPcap API-compatible Mode"*.
+* **Linux:** Install `libpcap` using your package manager:
+  ```bash
+  sudo apt update && sudo apt install libpcap-dev -y

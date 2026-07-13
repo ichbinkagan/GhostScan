@@ -1,10 +1,20 @@
-from scapy.all import sniff, IP, TCP, UDP, ARP
+from scapy.all import sniff, IP, TCP, UDP, ARP, wrpcap
 from rich.table import Table
 from rich.console import Console
 from datetime import datetime
 
 
 console = Console()
+
+def save_capture():
+
+    print("Capturing 100 packets...")
+
+    packets = sniff(count=100)
+
+    wrpcap("network_traffic.pcap", packets)
+
+    print("Capture saved as network_traffic.pcap")
 
 
 def capture_packets():

@@ -1,0 +1,13 @@
+# Python source
+*.py
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.env
+
+# Output files
+output/

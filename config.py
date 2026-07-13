@@ -1,0 +1,5 @@
+VERSION="1.0"
+
+NAME="GhostScan"
+
+DEFAULT_COUNT=10

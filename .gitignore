@@ -1,13 +1,74 @@
-# Python source
-*.py
+# =========================
+# Python
+# =========================
 
-# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Virtual environment
+# Virtual environments
 venv/
+env/
+.venv/
+
+# Environment files
 .env
 
-# Output files
+
+# =========================
+# PyInstaller
+# =========================
+
+build/
+*.spec
+
+
+# =========================
+# IDE / Editor
+# =========================
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+
+
+# =========================
+# Logs / Output
+# =========================
+
+*.log
+logs/
+
 output/
+results/
+
+
+# =========================
+# Packet captures
+# =========================
+
+*.pcap
+*.pcapng
+
+
+# =========================
+# OS files
+# =========================
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.bak
+*.cache
